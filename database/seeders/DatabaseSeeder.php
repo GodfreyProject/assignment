@@ -11,8 +11,18 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+    // public function run()
+    // {
+    //     // \App\Models\User::factory(10)->create();
+    // }
+
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Call UserSeeder to seed the users table
+        $this->call(UserSeeder::class);
+        // Call ProductSeeder to seed the products table
+        //$this->call(ProductSeeder::class);
+
+        
     }
 }
